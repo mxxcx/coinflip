@@ -1,0 +1,13 @@
+version: '2'
+services:
+    ns-game-api-app:
+        image: ns-game-api
+        restart: always
+        environment:
+            - NS_DB_HOST=
+            - NS_DB_USER=
+            - NS_DB_PASSWORD=
+            - NS_DB_DATABASE=
+            - NS_ADMIN_SIGNING_KEY=
+        ports:
+            - 3000:80

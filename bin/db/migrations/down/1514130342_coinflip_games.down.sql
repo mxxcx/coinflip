@@ -1,0 +1,1 @@
+DROP TABLE coinflip_games;
